@@ -8,6 +8,7 @@
   --button-card-color-brown-80:rgba(201, 155, 103, 0.8);
   --button-card-color-brown-60:rgba(201, 155, 103, 0.6);
   --light-brown: #F3D7B7;
+  --light-bg:#F8F8F2;
 }
 
 html {
@@ -103,6 +104,8 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 @media
@@ -224,3 +227,71 @@ padding-bottom: 100px;
 .hero-img-index{
   height: 696px;
 }
+
+/* MAIN  */
+
+.index-collection-inner{
+  background-color: var(--light-bg);
+  background-image: url(../images/index-collection-bg\ \(1\).jpg);
+  padding: 50px 143px;
+}
+.index-heading-collection {
+  margin-bottom: 80px;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #000;
+}
+.index-collection-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.index-collection-item {
+  display: flex;
+  align-items: center;
+}
+
+.index-collection-item:nth-child(even){
+  flex-direction: row-reverse;
+}
+.idex-collection-img {
+  width: 450px;
+  height: 375px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.index-collection-info {
+  flex-grow: 1;
+  padding-left: 117px;
+  padding-right: 117px;
+}
+.index-collection-title {
+margin-top: 0;
+margin-bottom: 10px;
+font-weight: 500;
+font-size: 48px;
+line-height: normal;
+text-transform: uppercase;
+}
+.index-collection-text {
+font-size: 22px;
+line-height: 34px;
+margin: 0;
+}
+
+.index-collection-text:not(:last-child){
+  margin-bottom: 10px;
+}
+
+/* .index-collection-item:nth-child(odd) .index-collection-info{
+padding-left: 117px;
+
+}
+
+.index-collection-item:nth-child(even) .index-collection-info{
+  padding-right: 117px;
+} */
